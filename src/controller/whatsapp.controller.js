@@ -7,6 +7,10 @@ const PHONE_NUMBER_ID = 975901048946656;
 
 // console.log(TOKEN);
 // console.log(PHONE_NUMBER_ID)
+const sendMessage = async (req, res) => {
+  try {
+    const { to, message } = req.body;
+
 
     const response = await axios.post(
       `https://graph.facebook.com/v19.0/${PHONE_NUMBER_ID}/messages`,
