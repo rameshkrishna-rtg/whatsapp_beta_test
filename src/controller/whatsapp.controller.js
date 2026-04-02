@@ -35,5 +35,8 @@ const sendMessage = async (req, res) => {
     res.status(500).json(err.response?.data || err.message);
   }
 };
+module.exports={
+    sendMessage
+}
 
 
