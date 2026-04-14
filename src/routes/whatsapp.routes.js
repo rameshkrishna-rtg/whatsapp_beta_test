@@ -5,3 +5,4 @@ const {sendMessage} = require("../controller/whatsapp.controller")
 
 router.post("/send",sendMessage);
 
+module.exports = router
